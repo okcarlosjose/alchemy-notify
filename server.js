@@ -3,7 +3,7 @@ const path = require('path')
 const socketIO = require('socket.io');
 const PORT = process.env.PORT || 5000
 const fetch = require('node-fetch');
-
+console.log('Const variables');
 // start the express server with the appropriate routes for our webhook and web requests
 var app = express()
   .use(express.static(path.join(__dirname, 'public')))
